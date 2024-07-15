@@ -18,3 +18,4 @@ echo "# git-prompt" >> ~/.bashrc
 echo "source $PWD/git-prompt/git-prompt.sh" >> ~/.bashrc
 source ~/.bashrc
 ```
+![alt text](demo.gif)
