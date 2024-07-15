@@ -1,0 +1,29 @@
+# バックアップファイル
+*.bak
+
+# Merge tool を使用した場合に作成されるバックアップファイル
+*.orig
+
+# スワップファイル
+.*.swp
+
+# DesktopServices Store. Mac で生成されるフォルダのメタデータ
+.DS_Store
+
+# Windows で生成されるサムネイルファイル
+thumbs.db
+
+# VScode のメタデータ
+.vscode
+
+# direnv で生成される環境変数ファイル
+.envrc
+
+# BASH環境変数ファイル
+.bashrc
+
+# EditorConfig の設定ファイル
+# .editorconfig
+
+# 環境変数ファイル
+.env
