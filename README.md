@@ -7,7 +7,7 @@
 ## Use
 
 ```sh
-curl -o $HOME/git-prompt.sh https://raw.githubusercontent.com/yamause/git-prompt/git-prompt.sh
+curl -o $HOME/git-prompt.sh https://raw.githubusercontent.com/yamause/git-prompt/main/git-prompt.sh
 echo 'source $HOME/git-prompt.sh' >> $HOME/.bashrc
 source $HOME/.bashrc
 ```
