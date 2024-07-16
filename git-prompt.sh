@@ -5,7 +5,7 @@ function branch() {
     yellow="\033[01;33m"
     branch_name=\(`git branch --show-current 2> /dev/null`\)
 
-    git diff --quiet 2>/dev/null
+    git diff --no-ext-diff --quiet 2>/dev/null
     status=${PIPESTATUS[@]}
 
     # Unchanged
