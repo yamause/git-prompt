@@ -18,4 +18,4 @@ function branch() {
 }
 
 no_color="\033[00;00m"
-export PS1="\u@\h:\W\$(branch)$no_color\\$ "
+export PS1="\u@\h:\W\$(branch)\[$no_color\]\\$ "
