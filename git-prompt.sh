@@ -1,21 +1,22 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-function branch() {
-    green="\033[01;32m"
-    yellow="\033[01;33m"
-    branch_name=\(`git branch --show-current 2> /dev/null`\)
+set -u
 
-    git diff --quiet 2>/dev/null
-    status=${PIPESTATUS[@]}
+function color() {
+    green="\e[01;32m"
+    yellow="\e[01;33m"
 
     # Unchanged
-    if [ $status -eq 0 ]; then
-        printf $green$branch_name
+    if git diff --no-ext-diff --quiet; then
+        echo -e "${green}"
     # Changed
-    elif [ $status -eq 1 ]; then
-        printf $yellow$branch_name
+    else
+        echo -e "${yellow}"
     fi
 }
 
-no_color="\033[00;00m"
-PS1="\u@\h:\W\$(branch)$no_color\\$ "
+PS1='\u@\h:\W\[$(color)\]$(__git_ps1)\[\e[00;00m\]\\$'
+
+
+
+
