@@ -7,7 +7,7 @@ function color() {
     yellow="\e[01;33m"
 
     # Unchanged
-    if git diff --no-ext-diff --quiet; then
+    if git diff --no-ext-diff --quiet 2>/dev/null; then
         echo -e "${green}"
     # Changed
     else
