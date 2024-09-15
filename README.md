@@ -7,8 +7,7 @@
 ## Use
 
 ```sh
-git clone git@github.com:yamause/git-prompt.git
-echo "# git-prompt" >> ~/.bashrc
-echo "source $PWD/git-prompt/git-prompt.sh" >> ~/.bashrc
-source ~/.bashrc
+curl -o $HOME/git-prompt.sh https://raw.githubusercontent.com/yamause/git-prompt/main/git-prompt.sh
+echo 'source $HOME/git-prompt.sh' >> $HOME/.bashrc
+source $HOME/.bashrc
 ```

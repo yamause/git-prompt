@@ -16,7 +16,3 @@ function color() {
 }
 
 PS1='\u@\h:\W\[$(color)\]$(__git_ps1)\[\e[00;00m\]\\$'
-
-
-
-
